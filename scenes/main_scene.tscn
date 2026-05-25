@@ -9,10 +9,12 @@ size = Vector3(10, 1, 10)
 [sub_resource type="BoxMesh" id="BoxMesh_gubc5"]
 size = Vector3(10, 1, 10)
 
+[sub_resource type="Environment" id="Environment_pw63i"]
+
 [node name="MainScene" type="Node3D" unique_id=271970607]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1249919163]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9611598, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.7337344, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=587109268]
 shape = SubResource("BoxShape3D_pu3yx")
@@ -24,3 +26,6 @@ mesh = SubResource("BoxMesh_gubc5")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.642163)
 
 [node name="Player" parent="." unique_id=882706492 instance=ExtResource("2_7ykc4")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=569487553]
+environment = SubResource("Environment_pw63i")
