@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bd5dnn6jiitf3"]
+
+[ext_resource type="PackedScene" uid="uid://bwvwwgf37g71i" path="res://objects/triangle.tscn" id="1_pw63i"]
+[ext_resource type="PackedScene" uid="uid://daovdbkb48nwk" path="res://objects/player.tscn" id="2_7ykc4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pu3yx"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gubc5"]
+size = Vector3(10, 1, 10)
+
+[node name="MainScene" type="Node3D" unique_id=271970607]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1249919163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9611598, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=587109268]
+shape = SubResource("BoxShape3D_pu3yx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=448528201]
+mesh = SubResource("BoxMesh_gubc5")
+
+[node name="triangle" parent="." unique_id=1543303149 instance=ExtResource("1_pw63i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.642163)
+
+[node name="Player" parent="." unique_id=882706492 instance=ExtResource("2_7ykc4")]
