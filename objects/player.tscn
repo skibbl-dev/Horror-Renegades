@@ -27,4 +27,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.233)
 transform = Transform3D(1, 0, 0, 0, 0.019249756, -0.9998147, 0, 0.9998147, 0.019249756, 0, 0, -0.57823765)
 
 [node name="pickup_area" type="Marker3D" parent="head/Camera3D" unique_id=886385007]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, -0.7)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, -0.85)

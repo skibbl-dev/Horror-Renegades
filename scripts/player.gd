@@ -8,6 +8,7 @@ const JUMP_VELOCITY = 4.8
 const SENSITIVITY = 0.004
 const BOB_FREQ = 2.4
 const BOB_AMP = 0.08
+const THROW_FORCE = 3
 var t_bob = 0.0 # Time counter for head bob
 var can_bob: bool = true
 const BASE_FOV = 75.0 # Default field of view
@@ -140,5 +141,5 @@ func drop():
 	camera.remove_child(held_item)
 	main.add_child(held_item)
 	held_item.global_position = pickup_area.global_position
-	held_item.linear_velocity = Vector3(0,0,0)
+	held_item.linear_velocity = head.global_basis.z * -THROW_FORCE
 	held_item.angular_velocity = Vector3(0,0,0)
