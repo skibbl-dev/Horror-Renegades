@@ -87,5 +87,5 @@ anti_aliasing/screen_space_roughness_limiter/enabled=false
 
 color_depth={
 "type": "float",
-"value": 16.0
+"value": 12.0
 }
