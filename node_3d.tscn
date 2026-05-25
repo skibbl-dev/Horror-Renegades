@@ -54,4 +54,5 @@ transform = Transform3D(1, 0, 0, 0, 0.019249756, -0.9998147, 0, 0.9998147, 0.019
 
 [node name="pickup_area" type="Marker3D" parent="Player/head/Camera3D" unique_id=886385007]
 
-[node name="triangle" parent="." unique_id=1543303149 instance=ExtResource("2_noarx")]
+[node name="triangle" parent="." unique_id=1543303149 groups=["pickable"] instance=ExtResource("2_noarx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4680505, 0, 0)
