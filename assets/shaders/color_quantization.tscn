@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bgmk6pdjjynh8"]
+
+[ext_resource type="Shader" uid="uid://cwuhrvu1axape" path="res://assets/shaders/ColorQuantization.gdshader" id="1_x3lwe"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5uao1"]
+render_priority = 0
+shader = ExtResource("1_x3lwe")
+shader_parameter/dither_amount = 0.61999998614176
+
+[sub_resource type="QuadMesh" id="QuadMesh_hej43"]
+material = SubResource("ShaderMaterial_5uao1")
+
+[node name="ColorQuantization" type="MeshInstance3D" unique_id=1270535435]
+extra_cull_margin = 16384.0
+mesh = SubResource("QuadMesh_hej43")

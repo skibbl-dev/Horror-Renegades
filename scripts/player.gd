@@ -140,6 +140,7 @@ func drop():
 	held_item.get_node("CollisionShape3D").disabled = false
 	camera.remove_child(held_item)
 	main.add_child(held_item)
-	held_item.global_position = pickup_area.global_position
+	held_item.global_position = pickup_area.global_position - (head.global_basis.z*0.3)
+	held_item.global_rotation = head.global_rotation
 	held_item.linear_velocity = head.global_basis.z * -THROW_FORCE
 	held_item.angular_velocity = Vector3(0,0,0)

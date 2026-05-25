@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://daovdbkb48nwk"]
 
 [ext_resource type="Script" uid="uid://cvu7nu4ownh3n" path="res://scripts/player.gd" id="1_4flbx"]
+[ext_resource type="PackedScene" uid="uid://bgmk6pdjjynh8" path="res://assets/shaders/color_quantization.tscn" id="2_ykyjo"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_onrkg"]
 
@@ -28,3 +29,5 @@ transform = Transform3D(1, 0, 0, 0, 0.019249756, -0.9998147, 0, 0.9998147, 0.019
 
 [node name="pickup_area" type="Marker3D" parent="head/Camera3D" unique_id=886385007]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, -0.85)
+
+[node name="ColorQuantization" parent="." unique_id=1270535435 instance=ExtResource("2_ykyjo")]

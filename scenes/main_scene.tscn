@@ -36,3 +36,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.642163)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=569487553]
 environment = SubResource("Environment_pw63i")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1073637881]
+transform = Transform3D(1, 0, 0, 0, -0.70710677, -0.70710677, 0, 0.70710677, -0.70710677, 0, 3, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1770565251]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.3348744, -4)
+light_energy = 8.023
+omni_range = 5.328
