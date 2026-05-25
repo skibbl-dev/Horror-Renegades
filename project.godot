@@ -15,6 +15,12 @@ run/main_scene="uid://bd5dnn6jiitf3"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=240
+window/stretch/mode="viewport"
+
 [file_customization]
 
 folder_colors={
@@ -75,3 +81,5 @@ interact={
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+shading/overrides/force_vertex_shading=true
+anti_aliasing/screen_space_roughness_limiter/enabled=false

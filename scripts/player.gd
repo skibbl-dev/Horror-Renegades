@@ -2,8 +2,8 @@ extends CharacterBody3D
 
 @onready var main: Node3D = $".."
 var speed
-const WALK_SPEED = 5.0
-const SPRINT_SPEED = 8.0
+const WALK_SPEED = 3.7
+const SPRINT_SPEED = 5.5
 const JUMP_VELOCITY = 4.8
 const SENSITIVITY = 0.004
 const BOB_FREQ = 2.4
