@@ -36,7 +36,7 @@ func _unhandled_input(event):
 		# Rotate camera up/down based on mouse Y movement
 		camera.rotate_x(-event.relative.y * SENSITIVITY)
 		# Clamp vertical rotation so player can't look too far up or down
-		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-90), deg_to_rad(90))
+		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-80), deg_to_rad(80))
 
 func _physics_process(delta):
 	# Apply gravity when not on floor
@@ -76,7 +76,8 @@ func _physics_process(delta):
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 3.0)
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 3.0)
 		can_bob = false
-
+	
+	
 	# Update head bob timer and control bob only on floor
 	can_bob = is_on_floor()
 	t_bob += delta * velocity.length() * float(can_bob)
@@ -97,7 +98,7 @@ func _headbob(time) -> Vector3:
 		pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP # Horizontal bobbing
 	return pos
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pickup()
 
 func pickup():
@@ -118,21 +119,23 @@ func pickup():
 		held_item.global_position = pickup_area.global_position
 		held_item.get_node("CollisionShape3D").disabled = true
 		if held_item.is_in_group("pickable") and not held_item.is_in_group("usable"):
-			held_item.scale = Vector3(.5,.5,.5)
-			held_item.look_at(Vector3(global_position.x, held_item.global_position.y, global_position.z))
+			#held_item.scale = Vector3(.5,.5,.5)
+			held_item.look_at(head.global_position)
+			#held_item.look_at(Vector3(global_position.x, held_item.global_position.y, global_position.z))
 		elif held_item.is_in_group("usable"):
 			if held_item and held_item.is_in_group("usable"):
-				var cam_rot = camera.rotation
-				held_item.rotation.y = cam_rot.y
-				held_item.rotation.x = cam_rot.x * 0.2
-				held_item.rotation.z = 0
+				#var cam_rot = camera.rotation
+				#held_item.rotation.y = 0
+				#held_item.rotation.x = cam_rot.y
+				#held_item.rotation.z = 0
+				held_item.look_at(head.global_position)
 				held_item.global_position = pickup_area.global_position
-				held_item.translate_object_local(Vector3(0.2, -0.2, -0.5))
+				#held_item.translate_object_local(Vector3(0.2, -0.2, -0.5))
 
 func drop():
 	picked = false
 	holding = false
-	held_item.scale = Vector3(1,1,1)
+	#held_item.scale = Vector3(1,1,1)
 	held_item.get_node("CollisionShape3D").disabled = false
 	camera.remove_child(held_item)
 	main.add_child(held_item)

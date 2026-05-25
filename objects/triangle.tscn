@@ -1,13 +1,15 @@
 [gd_scene format=3 uid="uid://bwvwwgf37g71i"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_2uwtb"]
+size = Vector3(0.3, 0.3, 0.3)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2uwtb"]
 albedo_color = Color(0.064699404, 0.7077439, 0.7642708, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2uwtb"]
 
-[node name="triangle" type="RigidBody3D" unique_id=1543303149]
+[node name="triangle" type="RigidBody3D" unique_id=1543303149 groups=["pickable"]]
+mass = 6.46
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=919890847]
 mesh = SubResource("PrismMesh_2uwtb")

@@ -18,11 +18,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.013061523, 0)
 shape = SubResource("CapsuleShape3D_i3pqv")
 
 [node name="head" type="Node3D" parent="." unique_id=68233473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.743, 0)
 
 [node name="Camera3D" type="Camera3D" parent="head" unique_id=786546619]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7430261, -0.2327086)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.233)
 
 [node name="RayCast3D" type="RayCast3D" parent="head/Camera3D" unique_id=2007675380]
 transform = Transform3D(1, 0, 0, 0, 0.019249756, -0.9998147, 0, 0.9998147, 0.019249756, 0, 0, -0.57823765)
 
 [node name="pickup_area" type="Marker3D" parent="head/Camera3D" unique_id=886385007]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, -0.7)

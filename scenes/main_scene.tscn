@@ -9,7 +9,14 @@ size = Vector3(10, 1, 10)
 [sub_resource type="BoxMesh" id="BoxMesh_gubc5"]
 size = Vector3(10, 1, 10)
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pw63i"]
+
+[sub_resource type="Sky" id="Sky_7ykc4"]
+sky_material = SubResource("ProceduralSkyMaterial_pw63i")
+
 [sub_resource type="Environment" id="Environment_pw63i"]
+background_mode = 2
+sky = SubResource("Sky_7ykc4")
 
 [node name="MainScene" type="Node3D" unique_id=271970607]
 
