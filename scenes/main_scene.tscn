@@ -2,9 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bwvwwgf37g71i" path="res://objects/triangle.tscn" id="1_pw63i"]
 [ext_resource type="PackedScene" uid="uid://daovdbkb48nwk" path="res://objects/player.tscn" id="2_7ykc4"]
+[ext_resource type="PackedScene" uid="uid://difapqoc6icli" path="res://objects/microwave.tscn" id="2_rt2n2"]
 [ext_resource type="Script" uid="uid://bgnm1vui25jpc" path="res://scenes/ui.gd" id="3_pu3yx"]
-[ext_resource type="Texture2D" uid="uid://c3m2yw0e8blje" path="res://assets/crosshair001.png" id="4_pu3yx"]
-[ext_resource type="Texture2D" uid="uid://81gbtmit8jd" path="res://assets/crosshair195.png" id="5_gubc5"]
+[ext_resource type="Texture2D" uid="uid://du3ho1xfsyd40" path="res://assets/crosshair.png" id="4_pu3yx"]
+[ext_resource type="Texture2D" uid="uid://d3icmu7hl4bjj" path="res://assets/crosshairselect.png" id="5_gubc5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pu3yx"]
 size = Vector3(10, 1, 10)
@@ -35,6 +36,9 @@ mesh = SubResource("BoxMesh_gubc5")
 [node name="triangle" parent="." unique_id=1543303149 instance=ExtResource("1_pw63i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.642163)
 
+[node name="microwave" parent="." unique_id=1057713338 groups=["pickable"] instance=ExtResource("2_rt2n2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1449683, 0, 0)
+
 [node name="Player" parent="." unique_id=882706492 instance=ExtResource("2_7ykc4")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=569487553]
@@ -42,6 +46,7 @@ environment = SubResource("Environment_pw63i")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1073637881]
 transform = Transform3D(1, 0, 0, 0, -0.7071068, -0.7071068, 0, 0.7071068, -0.7071068, 0, 12.061334, 0)
+light_color = Color(1, 1, 0.5254902, 1)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1770565251]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1698878, 2.3596797, 0.7476797)
@@ -61,20 +66,16 @@ script = ExtResource("3_pu3yx")
 [node name="crosshair" type="TextureRect" parent="UI" unique_id=1964481700]
 texture_filter = 1
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -64.0
-offset_top = -64.0
-offset_right = 64.0
-offset_bottom = 64.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_pu3yx")
+stretch_mode = 3
 
 [node name="crosshair_select" type="TextureRect" parent="UI" unique_id=1279583642]
+visible = false
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 8
@@ -89,3 +90,4 @@ offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_gubc5")
+stretch_mode = 3
