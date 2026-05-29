@@ -28,9 +28,11 @@ sky = SubResource("Sky_7ykc4")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.7337344, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=587109268]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 shape = SubResource("BoxShape3D_pu3yx")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=448528201]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 mesh = SubResource("BoxMesh_gubc5")
 
 [node name="triangle" parent="." unique_id=1543303149 instance=ExtResource("1_pw63i")]

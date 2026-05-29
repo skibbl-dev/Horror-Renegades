@@ -50,7 +50,6 @@ size = Vector3(0.60240173, 0.3661499, 0.4038086)
 [node name="microwave" type="RigidBody3D" unique_id=1057713338]
 
 [node name="psx-microwave" type="Node3D" parent="." unique_id=240895121]
-transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, 0)
 
 [node name="psx-microwave" type="MeshInstance3D" parent="psx-microwave" unique_id=1671894274]
 mesh = SubResource("ArrayMesh_t5i0v")
@@ -59,7 +58,8 @@ mesh = SubResource("ArrayMesh_t5i0v")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="psx-microwave/psx-microwave/StaticBody3D" unique_id=1240767577]
 shape = SubResource("ConcavePolygonShape3D_c64ty")
+disabled = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=658469881]
-transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -0.0029301643, 0.46964204, 0.0021972656)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0029301643, 0.198484, 0.0021972656)
 shape = SubResource("BoxShape3D_gcfxx")
