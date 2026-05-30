@@ -101,7 +101,6 @@ stretch_mode = 3
 [node name="CanvasLayer" type="CanvasLayer" parent="UI" unique_id=443022290]
 
 [node name="ObjectiveLabel" type="Label" parent="UI/CanvasLayer" unique_id=1007943851]
-z_index = 1
 texture_filter = 1
 offset_left = 5.0
 offset_right = 65.0
