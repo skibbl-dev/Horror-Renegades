@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bd5dnn6jiitf3"]
 
-[ext_resource type="Script" uid="uid://bssj4l7yq7frb" path="res://scenes/main_scene.gd" id="1_c1pb6"]
+[ext_resource type="Script" path="res://scenes/main_scene.gd" id="1_c1pb6"]
 [ext_resource type="PackedScene" uid="uid://bwvwwgf37g71i" path="res://objects/triangle.tscn" id="1_pw63i"]
 [ext_resource type="PackedScene" uid="uid://daovdbkb48nwk" path="res://objects/player.tscn" id="2_7ykc4"]
 [ext_resource type="PackedScene" uid="uid://difapqoc6icli" path="res://objects/microwave.tscn" id="2_rt2n2"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://du3ho1xfsyd40" path="res://assets/crosshair.png" id="4_pu3yx"]
 [ext_resource type="Texture2D" uid="uid://d3icmu7hl4bjj" path="res://assets/crosshairselect.png" id="5_gubc5"]
 [ext_resource type="FontFile" uid="uid://dkhjf6le6lsab" path="res://assets/Eazygoin-Regular.ttf" id="7_18nlu"]
-[ext_resource type="Script" uid="uid://cy0pldeasa6kh" path="res://scripts/objectiveLabel.gd" id="7_c16ls"]
+[ext_resource type="Script" path="res://scripts/objectiveLabel.gd" id="7_c16ls"]
 [ext_resource type="Texture2D" uid="uid://ckjqgi4f2jepv" path="res://assets/discholder.png" id="8_6wevv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pu3yx"]
@@ -56,7 +56,7 @@ transform = Transform3D(1, 0, 0, 0, -0.7071068, -0.7071068, 0, 0.7071068, -0.707
 light_color = Color(1, 1, 0.5254902, 1)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1770565251]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1698878, 6.827587, 0.7476797)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1698878, 3.01293, -1.085681)
 light_energy = 8.023
 omni_range = 5.328
 
