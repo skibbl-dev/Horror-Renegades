@@ -92,6 +92,10 @@ focus_window={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_2="Player"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

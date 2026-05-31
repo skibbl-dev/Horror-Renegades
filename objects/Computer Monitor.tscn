@@ -25,12 +25,19 @@ material = SubResource("StandardMaterial3D_peer7")
 size = Vector2(0.86, 0.69)
 orientation = 2
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_1g1cj"]
+size = Vector3(0.8564453, 0.670166, 0.056518555)
+
 [node name="Computer Monitor" type="Node3D" unique_id=1342909355 node_paths=PackedStringArray("viewport")]
 script = ExtResource("1_peer7")
 viewport = NodePath("SubViewportContainer/Text")
 
-[node name="Screen2" type="MeshInstance3D" parent="." unique_id=1116579723]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.52424765, 0.48166287)
+[node name="Cursor" type="Marker3D" parent="." unique_id=2012520448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.524, 0.482)
+gizmo_extents = 0.05
+
+[node name="Mesh" type="MeshInstance3D" parent="Cursor" unique_id=1116579723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023013413, -0.04180938, 0)
 mesh = SubResource("PlaneMesh_peer7")
 
 [node name="Screen" type="MeshInstance3D" parent="." unique_id=709827300]
@@ -56,3 +63,9 @@ size = Vector2i(320, 240)
 render_target_update_mode = 4
 
 [node name="Node2D" parent="SubViewportContainer/Text" unique_id=1828832221 instance=ExtResource("2_4c0lh")]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1779434732]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=222377758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.602, 0.42970824)
+shape = SubResource("BoxShape3D_1g1cj")
