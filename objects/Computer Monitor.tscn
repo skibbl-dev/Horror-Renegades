@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bwaglcv5o7vjq"]
+
+[ext_resource type="PackedScene" uid="uid://d4egnoq5sfrl0" path="res://assets/computer/CrtMonitor.fbx" id="1_qqp44"]
+[ext_resource type="PackedScene" uid="uid://mqreggrky4xt" path="res://scenes/Minigame/node_2d.tscn" id="2_4c0lh"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_4c0lh"]
+viewport_path = NodePath("SubViewportContainer/SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_peer7"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_4c0lh")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1g1cj"]
+material = SubResource("StandardMaterial3D_peer7")
+size = Vector2(0.43, 0.345)
+orientation = 2
+
+[node name="Node3D" type="Node3D" unique_id=1342909355]
+
+[node name="CrtMonitor" parent="." unique_id=494460551 instance=ExtResource("1_qqp44")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CrtMonitor" unique_id=709827300]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29707432, 0.22515309)
+mesh = SubResource("PlaneMesh_1g1cj")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=2099801516]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=790757140]
+
+[node name="Node2D" parent="SubViewportContainer/SubViewport" unique_id=1828832221 instance=ExtResource("2_4c0lh")]
+
+[node name="Label" type="Label" parent="SubViewportContainer/SubViewport/Node2D" unique_id=31899968]
+offset_right = 425.0
+offset_bottom = 120.0
+text = "TEXTETXETETEXT"
