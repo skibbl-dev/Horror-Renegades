@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6kq8jyv2cq6h"
-path="res://.godot/imported/disctemplate.png-8a0c74b5ac701720ad34a2b6166925c5.ctex"
+uid="uid://ckjqgi4f2jepv"
+path="res://.godot/imported/discholder.png-1512106d60a236c713b27485e2eb5e3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/disctemplate.png"
-dest_files=["res://.godot/imported/disctemplate.png-8a0c74b5ac701720ad34a2b6166925c5.ctex"]
+source_file="res://assets/discholder.png"
+dest_files=["res://.godot/imported/discholder.png-1512106d60a236c713b27485e2eb5e3f.ctex"]
 
 [params]
 
