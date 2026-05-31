@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://crrqkvrqvs8bx"]
+
+[ext_resource type="Shader" uid="uid://bhuo2h4mf768o" path="res://assets/shaders/monster.gdshader" id="1_sor3i"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j6lmt"]
+render_priority = 0
+shader = ExtResource("1_sor3i")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_x8skh"]
+material = SubResource("ShaderMaterial_j6lmt")
+top_radius = 1.5
+bottom_radius = 1.5
+height = 3.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" unique_id=1972395279]
+mesh = SubResource("CylinderMesh_x8skh")
