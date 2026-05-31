@@ -7,7 +7,7 @@ func _ready():
 	modulate.a = 0.0
 	Objective.objective_changed.connect(_on_objective_changed)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("show_objectives") and can_show_objective:
 		show_objective(Objective.current_objective)
 
