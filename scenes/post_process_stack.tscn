@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://c1h3yvsfymxk0"]
+
+[ext_resource type="Shader" uid="uid://bfx0wsnmcevus" path="res://assets/shaders/band_dither.gdshader" id="1_j02gt"]
+[ext_resource type="PackedScene" uid="uid://bd5dnn6jiitf3" path="res://scenes/main_scene.tscn" id="1_uejn8"]
+[ext_resource type="Texture2D" uid="uid://dwk5fxxd3syje" path="res://assets/shaders/psxdither.png" id="2_y6c5x"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_td3ms"]
+shader = ExtResource("1_j02gt")
+shader_parameter/dither_tex = ExtResource("2_y6c5x")
+shader_parameter/col_depth = 15.0
+shader_parameter/dither_banding = true
+
+[node name="PostProcessStack" type="Node" unique_id=164722535]
+
+[node name="Layer" type="CanvasLayer" parent="." unique_id=588900505]
+layer = 0
+
+[node name="DitherBanding" type="SubViewportContainer" parent="Layer" unique_id=778530796]
+material = SubResource("ShaderMaterial_td3ms")
+custom_minimum_size = Vector2(320, 240)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="World" type="SubViewport" parent="Layer/DitherBanding" unique_id=428204187]
+handle_input_locally = false
+canvas_item_default_texture_filter = 0
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+size = Vector2i(320, 240)
+render_target_update_mode = 4
+
+[node name="MainScene" parent="Layer/DitherBanding/World" unique_id=271970607 instance=ExtResource("1_uejn8")]
