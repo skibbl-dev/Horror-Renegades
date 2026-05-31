@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://b5rllb0pcfr2h"]
+
+[ext_resource type="Shader" uid="uid://bhuo2h4mf768o" path="res://assets/shaders/monster.gdshader" id="1_p0yvx"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_p0yvx")

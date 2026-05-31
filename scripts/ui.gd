@@ -2,7 +2,7 @@ extends Control
 
 @onready var player = get_parent().get_node("Player")
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if player.raycast.is_colliding():
 		if player.raycast.get_collider().is_in_group("pickable"):
 			$crosshair.hide()
