@@ -2,10 +2,23 @@
 
 [ext_resource type="Script" uid="uid://dy2yu1bwjonvp" path="res://scripts/computer_monitor.gd" id="1_peer7"]
 [ext_resource type="PackedScene" uid="uid://d4egnoq5sfrl0" path="res://assets/computer/CrtMonitor.fbx" id="1_qqp44"]
+[ext_resource type="Texture2D" uid="uid://qwjys5n303g" path="res://assets/computer/Cursor.png" id="2_1g1cj"]
 [ext_resource type="PackedScene" uid="uid://mqreggrky4xt" path="res://scenes/Minigame/node_2d.tscn" id="2_4c0lh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ynjd"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("2_1g1cj")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_peer7"]
+material = SubResource("StandardMaterial3D_2ynjd")
+size = Vector2(0.06, 0.1)
+orientation = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_peer7"]
 resource_local_to_scene = true
+shading_mode = 0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_1g1cj"]
 material = SubResource("StandardMaterial3D_peer7")
@@ -15,6 +28,10 @@ orientation = 2
 [node name="Computer Monitor" type="Node3D" unique_id=1342909355 node_paths=PackedStringArray("viewport")]
 script = ExtResource("1_peer7")
 viewport = NodePath("SubViewportContainer/Text")
+
+[node name="Screen2" type="MeshInstance3D" parent="." unique_id=1116579723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.52424765, 0.48166287)
+mesh = SubResource("PlaneMesh_peer7")
 
 [node name="Screen" type="MeshInstance3D" parent="." unique_id=709827300]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.60311645, 0.4539919)
