@@ -1,3 +1,71 @@
 [gd_scene format=3 uid="uid://mqreggrky4xt"]
 
+[sub_resource type="Gradient" id="Gradient_p15is"]
+offsets = PackedFloat32Array(0, 0.83460075, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.57224333, 0.57224333, 0.57224333, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_l5dc0"]
+gradient = SubResource("Gradient_p15is")
+
+[sub_resource type="Animation" id="Animation_p15is"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture:gradient")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("Gradient_p15is")]
+}
+
+[sub_resource type="Gradient" id="Gradient_l5dc0"]
+
+[sub_resource type="Animation" id="Animation_l5dc0"]
+resource_name = "new_animation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture:gradient")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [SubResource("Gradient_p15is"), SubResource("Gradient_l5dc0"), SubResource("Gradient_p15is")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q1elp"]
+_data = {
+&"RESET": SubResource("Animation_p15is"),
+&"new_animation": SubResource("Animation_l5dc0")
+}
+
 [node name="Node2D" type="Node2D" unique_id=1828832221]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1455042643]
+position = Vector2(320.25003, 118.875)
+scale = Vector2(2.5136719, 242.25)
+texture = SubResource("GradientTexture1D_l5dc0")
+
+[node name="Label" type="Label" parent="." unique_id=1923226023]
+offset_right = 321.0
+offset_bottom = 110.0
+theme_override_constants/line_spacing = -11
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 24
+text = "This is a text document that talks about why being gay is okayand actually very good for your health and mental well being.
+
+Also i am NOT GAY
+
+and i support all my queer friends"
+autowrap_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1511753919]
+libraries/ = SubResource("AnimationLibrary_q1elp")
+autoplay = &"new_animation"
