@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c1h3yvsfymxk0"]
 
-[ext_resource type="Shader" uid="uid://bfx0wsnmcevus" path="res://assets/shaders/band_dither.gdshader" id="1_j02gt"]
+[ext_resource type="Shader" path="res://assets/shaders/band_dither.gdshader" id="1_j02gt"]
 [ext_resource type="PackedScene" uid="uid://bd5dnn6jiitf3" path="res://scenes/main_scene.tscn" id="1_uejn8"]
-[ext_resource type="Texture2D" uid="uid://dwk5fxxd3syje" path="res://assets/shaders/psxdither.png" id="2_y6c5x"]
+[ext_resource type="Texture2D" path="res://assets/shaders/psxdither.png" id="2_y6c5x"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_td3ms"]
 shader = ExtResource("1_j02gt")

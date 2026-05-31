@@ -1,0 +1,59 @@
+[gd_scene format=4 uid="uid://chv3m6vsgg3m8"]
+
+[ext_resource type="Material" uid="uid://bc07uul7e66uf" path="res://assets/house/Materials/ceiling.tres" id="1_5tqca"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n8ij2"]
+resource_name = "Ceiling1"
+vertex_color_use_as_albedo = true
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hwvds"]
+_surfaces = [{
+"aabb": AABB(-0.005091195, -0.10505551, -0.0009547573, 0.2101824, 0.21014674, 0.0009547573),
+"format": 34359742465,
+"index_count": 96,
+"index_data": PackedByteArray("AgAKAAsACgACAAUAAAALAAoACwABAAIABQACAAEACwAAAAwACgAEAAAADAAAAAQABAAKAA0ABQANAAoADQAOAAQABAAOAAwAAQALAAMADAADAAsAAQAPAAUAAwAPAAEACQAFAA8ABgAPAAMADwAGAAkABQAJABAAEAAJAAYAEAANAAUAAwARAAYABgARABAAEQADAAwADQAQAAgACAAQABEACAAOAA0ADAAHABEAEQAHAAgABwAMAA4ADgAIAAcA"),
+"lods": [3.323476e-05, PackedByteArray("AAABAAIAAQAAAAMAAgAEAAAABQACAAEABAACAAUAAQAGAAUAAwAGAAEABwADAAAAAwAHAAYABwAAAAQABAAIAAcACAAEAAUABgAHAAgABQAJAAgACAAJAAYACQAFAAYA")],
+"name": "Ceiling1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("CtSmu1gn172uSHq6CtSmuxI61z2uSHq6CtSmuxI61z0AAAAAzczMPQAAAACuSHq6CtSmu1gn170AAAAAzczMPRI61z0AAAAAbgNSPhI61z2uSHq6bgNSPlgn172uSHq6bgNSPlgn170AAAAAbgNSPhI61z0AAAAACtSmuwAAAAAAAAAACtSmuwAAAACuSHq6zczMPVgn172uSHq6zczMPQAAAAAAAAAAzczMPVgn170AAAAAzczMPRI61z2uSHq6bgNSPgAAAAAAAAAAbgNSPgAAAACuSHq6")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_852hx"]
+resource_name = "Cube_173"
+_surfaces = [{
+"aabb": AABB(-0.005091195, -0.10505551, -0.0009547573, 0.2101824, 0.21014674, 0.0009547573),
+"attribute_data": PackedByteArray("l3iGv9o4AT9LhIY/3DgBP0uEhj9Kjv0+l3iGv0iO/T4AAIA/So79Pg2JUL1Kjv0+DYlQvds4AT8lQgNA2jgBPyRCA0BIjv0+AACAPwAAgD8lQgNASzwDQCVCA0CAiVC9FYlQvUs8A0ALiVC9YIlQvRaJUL1LPANAC4lQvWCJUL3//38/YIlQvSRCA0BLPANAJUIDQICJUL2XeIa/SI79PkuEhj9Kjv0+S4SGP9w4AT+XeIa/2zgBPyVCA0DbOAE/DYlQvds4AT8NiVC9So79PiVCA0BIjv0+AAAAAEqO/T4AAAAA2zgBPwAAgD/bOAE///9/P0CJUL0lQgNAAACAP/7/fz9giVC9DIlQvQAAgD/9/38/SzwDQCRCA0AAAIA/DIlQvQAAgD8AAIA/AACAP/3/fz9LPANAJUIDQAAAgD8AAIA/YIlQvQAAgD9Kjv0+AACAP9s4AT8AAAAASo79PgAAAADbOAE/"),
+"format": 34359742487,
+"index_count": 96,
+"index_data": PackedByteArray("AgAbABwAHAABAAIAAAAcABsAGwADAAAABAAFAAYABgAdAAQACAAEAB0AHQAHAAgACwAeAAkACQAfAAsACQAgAA0ADQAhAAkAIgAJACEAIQAMACIAIwAJACIAIgAKACMAJAAPABAAEAAlACQADgAkACUAJQAmAA4AEQAmACUAJQAnABEAJwAlACgAKAASACcAGQApACoAKgAYABkAFwAqACkAKQAaABcAKwAUABUAFQAsACsAEwArACwALAAWABMA"),
+"lods": [3.323476e-05, PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAEAAcACQAKAAsACgAJAAwACQALAA0ADQAMAAkADgAPABAAEQAOABAAEAASABEAEwAUABUAFQAWABMAFwAYABkAGQAaABcA")],
+"material": SubResource("StandardMaterial3D_n8ij2"),
+"name": "Ceiling1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 45,
+"vertex_data": PackedByteArray("CtSmu1gn172uSHq6CtSmuxI61z2uSHq6CtSmuxI61z0AAAAACtSmu1gn170AAAAAzczMPRI61z0AAAAACtSmuxI61z0AAAAACtSmuxI61z2uSHq6bgNSPhI61z2uSHq6bgNSPhI61z0AAAAAzczMPQAAAACuSHq6bgNSPlgn172uSHq6bgNSPhI61z2uSHq6CtSmu1gn172uSHq6CtSmuxI61z2uSHq6CtSmu1gn170AAAAACtSmuxI61z0AAAAAzczMPRI61z0AAAAAbgNSPlgn170AAAAAbgNSPhI61z0AAAAAbgNSPlgn170AAAAAbgNSPhI61z0AAAAAbgNSPhI61z2uSHq6bgNSPlgn172uSHq6bgNSPlgn172uSHq6CtSmu1gn172uSHq6CtSmu1gn170AAAAAbgNSPlgn170AAAAACtSmuwAAAAAAAAAACtSmuwAAAACuSHq6zczMPRI61z2uSHq6zczMPRI61z2uSHq6bgNSPgAAAACuSHq6zczMPRI61z2uSHq6CtSmuwAAAACuSHq6zczMPVgn172uSHq6bgNSPgAAAACuSHq6CtSmuwAAAAAAAAAAzczMPQAAAAAAAAAAzczMPVgn170AAAAAbgNSPgAAAAAAAAAAzczMPRI61z0AAAAAzczMPVgn170AAAAAzczMPVgn172uSHq6bgNSPgAAAAAAAAAAbgNSPgAAAACuSHq6AAD/f/9/AAAAAP9//38AAAAA/3//fwAAAAD/f/9/AAD/f///////P/9///////8//3///////z//f///////P/9///////8//////////z//////////P//////+//8//////////z//////////P/9//3////+//3//f////7//f/9/////v/9//3////+//3//f/7//7////9//3///////3//f///////f/9///////9//3////9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/AAD/f/9/AAAAAP9//38AAP9///////8///////7//z//////////P/////////8//////////z//////////P/////////8//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////v/9/AAD///+//38AAP///7////9//3///////3//f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_hwvds")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5tqca"]
+size = Vector3(0.2101824, 0.21014674, 0.001)
+
+[node name="ceiling" type="StaticBody3D" unique_id=302408705]
+
+[node name="Ceiling4_002" type="MeshInstance3D" parent="." unique_id=613282018]
+transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
+material_override = ExtResource("1_5tqca")
+mesh = SubResource("ArrayMesh_852hx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1588861962]
+transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 10, -0.047737863, -0.0017858983)
+shape = SubResource("BoxShape3D_5tqca")
+disabled = true

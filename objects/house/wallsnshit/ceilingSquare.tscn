@@ -1,0 +1,57 @@
+[gd_scene format=4 uid="uid://b730fugsqqc7b"]
+
+[ext_resource type="Material" uid="uid://ckvmr2j6b1yes" path="res://assets/house/Materials/ceiling1.tres" id="1_4kjwt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n8ij2"]
+resource_name = "Ceiling1"
+vertex_color_use_as_albedo = true
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wnpvf"]
+_surfaces = [{
+"aabb": AABB(-0.0050912052, -0.05, -0.0009547573, 0.110182434, 0.1, 0.0009547573),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYA"),
+"name": "Ceiling1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("INSmu83MTD0AAAAAINSmu83MTL0AAAAAINSmu83MTL2uSHq6INSmu83MTD2uSHq6EjrXPc3MTD0AAAAAEjrXPc3MTL2uSHq6EjrXPc3MTL0AAAAAEjrXPc3MTD2uSHq6")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4xa71"]
+resource_name = "Cube_174"
+_surfaces = [{
+"aabb": AABB(-0.0050912052, -0.05, -0.0009547573, 0.110182434, 0.1, 0.0009547573),
+"attribute_data": PackedByteArray("AACAP0qO/T4AAAAASo79PgAAAADbOAE/AACAP9s4AT9KhIY/So79PiiJUL1Kjv0+KIlQvdo4AT9LhIY/3DgBPwAAAABKjv0+AACAP0qO/T4AAIA/2zgBPwAAAADbOAE/KIlQvUqO/T5LhIY/So79PkuEhj/bOAE/KIlQvds4AT9LhIY/AACAP0qEhj8AAAA0KIlQvQAAAAAoiVC9AACAPyiJUL0AAIA/KIlQvQAAAABLhIY/AAAAAEuEhj8AAIA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_n8ij2"),
+"name": "Ceiling1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("INSmu83MTD0AAAAAINSmu83MTL0AAAAAINSmu83MTL2uSHq6INSmu83MTD2uSHq6EjrXPc3MTD0AAAAAINSmu83MTD0AAAAAINSmu83MTD2uSHq6EjrXPc3MTD2uSHq6EjrXPc3MTL0AAAAAEjrXPc3MTD0AAAAAEjrXPc3MTD2uSHq6EjrXPc3MTL2uSHq6INSmu83MTL0AAAAAEjrXPc3MTL0AAAAAEjrXPc3MTL2uSHq6INSmu83MTL2uSHq6EjrXPc3MTL2uSHq6EjrXPc3MTD2uSHq6INSmu83MTD2uSHq6INSmu83MTL2uSHq6INSmu83MTL0AAAAAINSmu83MTD0AAAAAEjrXPc3MTD0AAAAAEjrXPc3MTL0AAAAAAAD/f/9/AAAAAP9//38AAAAA/3//fwAAAAD/f/9/AAD/f////v//P/9///////8//3///////z//f////v//P////3//f///////f/9///////9//3///////3//f////38AAP///7//fwAA////v/9/AAD///+//38AAP///7///////v//P//////+//8///////7//z//////////P/9//3////+//3//f////7//f/9/////v/9//3////+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_wnpvf")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4kjwt"]
+size = Vector3(0.110182434, 0.1, 0.001)
+
+[node name="ceilingSquare" type="StaticBody3D" unique_id=302408705]
+
+[node name="CeilingSingle4_002" type="MeshInstance3D" parent="." unique_id=1755968473]
+transform = Transform3D(100, 0, 0, 0, -4.3711384e-06, 99.99999, 0, -99.99999, -4.3711384e-06, 0, 0, 0)
+material_override = ExtResource("1_4kjwt")
+mesh = SubResource("ArrayMesh_4xa71")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=46951441]
+transform = Transform3D(100, 0, 0, 0, -4.3711384e-06, 99.99999, 0, -99.99999, -4.3711384e-06, 5.000001, -0.047737863, 2.0866882e-09)
+shape = SubResource("BoxShape3D_4kjwt")
+disabled = true

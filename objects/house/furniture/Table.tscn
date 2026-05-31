@@ -51,9 +51,16 @@ uv1_scale = Vector3(0.76, 0.76, 0.76)
 uv1_offset = Vector3(0, 0.08, 0)
 texture_filter = 0
 
-[node name="StaticBody3D" type="StaticBody3D" unique_id=1171288618]
+[sub_resource type="BoxShape3D" id="BoxShape3D_owpi7"]
+size = Vector3(13.135895, 0.7368164, 5.736328)
+
+[node name="table" type="StaticBody3D" unique_id=1171288618]
 
 [node name="Table" type="MeshInstance3D" parent="." unique_id=714979530]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
 mesh = SubResource("ArrayMesh_orcdn")
 surface_material_override/0 = SubResource("StandardMaterial3D_ao417")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1940875339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.022781372, -0.1315918, 0)
+shape = SubResource("BoxShape3D_owpi7")

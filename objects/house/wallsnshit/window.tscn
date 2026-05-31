@@ -1,0 +1,57 @@
+[gd_scene format=4 uid="uid://dttsoqpofg15l"]
+
+[ext_resource type="Texture2D" uid="uid://c1nawl8w4easy" path="res://assets/house/Glass.png" id="1_gt4hn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtar4"]
+resource_name = "Glass"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_gt4hn")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_uyd5c"]
+_surfaces = [{
+"aabb": AABB(-0.068319894, -0.0023316415, -0.03486591, 0.13653022, 0.004663283, 0.069784544),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYA"),
+"name": "Glass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("TeuLvXTOGDvYBg89TeuLvXTOGLvYBg89TeuLvXTOGLuOzw69TeuLvXTOGDuOzw693LGLPXTOGDvYBg893LGLPXTOGLuOzw693LGLPXTOGLvYBg893LGLPXTOGDuOzw69")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cgehg"]
+resource_name = "Cube_222"
+_surfaces = [{
+"aabb": AABB(-0.068319894, -0.0023316415, -0.03486591, 0.13653022, 0.004663283, 0.069784544),
+"attribute_data": PackedByteArray("c/YKP/B4Lz0XE+o+0HgvPRcT6j4z23Q/c/YKPzPbdD8kTIA/AHkvPYoqTbvQeC89gCpNuzPbdD8mTIA/M9t0PxUT6j7weC89dPYKP9B4Lz1z9go/M9t0PxcT6j4z23Q/fipNuwB5Lz0mTIA/0HgvPSVMgD8z23Q/hypNuzPbdD8mTIA/QH0TPyVMgD9+Bdk+hSpNu34F2T6EKk27QX0TP4QqTbtBfRM/hCpNu34F2T4mTIA/fAXZPiVMgD9BfRM/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gtar4"),
+"name": "Glass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("TeuLvXTOGDvYBg89TeuLvXTOGLvYBg89TeuLvXTOGLuOzw69TeuLvXTOGDuOzw693LGLPXTOGDvYBg89TeuLvXTOGDvYBg89TeuLvXTOGDuOzw693LGLPXTOGDuOzw693LGLPXTOGLvYBg893LGLPXTOGDvYBg893LGLPXTOGDuOzw693LGLPXTOGLuOzw69TeuLvXTOGLvYBg893LGLPXTOGLvYBg893LGLPXTOGLuOzw69TeuLvXTOGLuOzw693LGLPXTOGLuOzw693LGLPXTOGDuOzw69TeuLvXTOGDuOzw69TeuLvXTOGLuOzw69TeuLvXTOGLvYBg89TeuLvXTOGDvYBg893LGLPXTOGDvYBg893LGLPXTOGLvYBg89AAD/f/9/AAAAAP9//38AAAAA/3//fwAAAAD/f/9/AAD/f///////P/9////+//8//3///////z//f///////P////3//f///////f/9///////9//3///////3//f////38AAP///7//fwAA////v/9/AAD///+//38AAP///7//////////P/////////8//////////z//////////P/9//3////+//3//f////7//f/9/////v/9//3////+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_uyd5c")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gt4hn"]
+size = Vector3(0.13653022, 0.004663283, 0.069784544)
+
+[node name="window" type="StaticBody3D" unique_id=302408705]
+
+[node name="glass2" type="MeshInstance3D" parent="." unique_id=2010947946]
+transform = Transform3D(-4.3711393e-06, -100, -4.3711393e-06, 0, -4.371139e-06, 100.00001, -100.00001, 4.371139e-06, 1.9106856e-13, 0, 0, 0)
+mesh = SubResource("ArrayMesh_cgehg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=362738388]
+transform = Transform3D(-4.3711393e-06, -100, -4.3711393e-06, 0, -4.371139e-06, 100.00001, -100.00001, 4.371139e-06, 1.9106856e-13, 1.2422884e-10, 0.0026363882, 0.0054784124)
+shape = SubResource("BoxShape3D_gt4hn")
