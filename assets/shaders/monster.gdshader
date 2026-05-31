@@ -14,8 +14,10 @@ float random(vec2 uv) {
 }
 
 void fragment() {
-	ALPHA = float( int( TIME * random(UV + vec2(TIME/16.0,TIME/16.0)) ) %int(6) ) * 0.08;
-	
+	ALPHA = float( int( TIME * random(UV + vec2(TIME/16.0,TIME/16.0)) ) %int(6) ) * 0.03;
+	ALBEDO.r  = float( int( TIME * random(UV + vec2(TIME/32.0,TIME/32.0)) ) %int(8) ) * 0.4;
+	ALBEDO.g  = float( int( TIME * random(UV + vec2(TIME/48.0,TIME/48.0)) ) %int(8) ) * 0.4;
+	ALBEDO.b  = float( int( TIME * random(UV + vec2(TIME/64.0,TIME/64.0)) ) %int(8) ) * 0.4;
 }
 
 //void light() {
