@@ -120,6 +120,7 @@ shadow_mesh = SubResource("ArrayMesh_wuin4")
 size = Vector3(0.036978, 0.028508637, 0.05034472)
 
 [node name="shortDrawer" type="StaticBody3D" unique_id=1171288618]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="Short_Drawer" type="MeshInstance3D" parent="." unique_id=1959520900]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)

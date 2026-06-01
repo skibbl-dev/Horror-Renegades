@@ -83,6 +83,7 @@ shadow_mesh = SubResource("ArrayMesh_8oetw")
 size = Vector3(0.09130797, 0.13805687, 0.025904082)
 
 [node name="bedFrame" type="StaticBody3D" unique_id=1171288618]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="BedFrame" type="MeshInstance3D" parent="." unique_id=69291273]
 transform = Transform3D(-100, -2.1316282e-12, 1.5099578e-05, -1.5099578e-05, 1.7881393e-05, -99.99999, -7.1054274e-13, -99.99999, -1.1920929e-05, 0, 0, 0)

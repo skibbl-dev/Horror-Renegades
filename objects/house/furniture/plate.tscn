@@ -49,6 +49,7 @@ shadow_mesh = SubResource("ArrayMesh_xjj2f")
 size = Vector3(0.01968434, 0.019651035, 0.0019270321)
 
 [node name="plate" type="StaticBody3D" unique_id=1171288618]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="Plate" type="MeshInstance3D" parent="." unique_id=1425405627]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)

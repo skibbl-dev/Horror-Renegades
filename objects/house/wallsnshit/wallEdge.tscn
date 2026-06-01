@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://c0odqoycogfx4"]
 
-[ext_resource type="Material" uid="uid://ce4purpqutsar" path="res://assets/house/Materials/flowerWall.tres" id="1_i1ei7"]
+[ext_resource type="Material" uid="uid://dnn7gttxh6w4y" path="res://assets/house/Materials/wall.tres" id="1_i1ei7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_185dt"]
 resource_name = "Indoor0"
@@ -42,15 +42,19 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_vybbn")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i1ei7"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_gn172"]
 size = Vector3(0.05003571, 0.05000001, 0.17143917)
 
 [node name="wallEdge" type="StaticBody3D" unique_id=302408705]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
 
 [node name="Wall_IndoorEdge0_005" type="MeshInstance3D" parent="." unique_id=738326772]
 transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 0, 0, 0)
 material_override = ExtResource("1_i1ei7")
 mesh = SubResource("ArrayMesh_i1ei7")
+surface_material_override/0 = SubResource("StandardMaterial3D_i1ei7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=966433111]
 transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 2.5017855, 8.571959, -2.499999)

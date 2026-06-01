@@ -83,6 +83,7 @@ shadow_mesh = SubResource("ArrayMesh_c1qis")
 size = Vector3(0.037003055, 0.020385757, 0.030263186)
 
 [node name="Airconditioner" type="StaticBody3D" unique_id=1715650519]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="Air Conditioner" type="MeshInstance3D" parent="." unique_id=2007697590]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)

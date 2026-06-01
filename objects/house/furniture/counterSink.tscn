@@ -182,9 +182,10 @@ shadow_mesh = SubResource("ArrayMesh_tw313")
 size = Vector3(0.05453421, 0.059338517, 0.06489442)
 
 [node name="counterSink" type="StaticBody3D" unique_id=1171288618]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="CounterSink" type="MeshInstance3D" parent="." unique_id=350843445]
-transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, 0, 0, 0)
+transform = Transform3D(-4.371139e-06, -100, -4.371139e-06, 0, -4.371139e-06, 100, -100, 4.371139e-06, 1.9106854e-13, 0, 0, 0)
 mesh = SubResource("ArrayMesh_k5ebu")
 
 [node name="Faucet" type="MeshInstance3D" parent="CounterSink" unique_id=113475056]
@@ -200,5 +201,5 @@ transform = Transform3D(0.98869, 0.14997345, 5.8401817e-08, 0.14997345, -0.98869
 mesh = SubResource("ArrayMesh_nss11")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=829917518]
-transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, 0.21500474, 0.49280003, 0.025210524)
+transform = Transform3D(-4.371139e-06, -100, -4.371139e-06, 0, -4.371139e-06, 100, -100, 4.371139e-06, 1.9106854e-13, 0.21500474, 0.49280003, 0.025210524)
 shape = SubResource("BoxShape3D_8deva")

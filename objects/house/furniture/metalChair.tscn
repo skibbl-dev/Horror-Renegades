@@ -52,6 +52,7 @@ albedo_texture = ExtResource("1_54ggx")
 size = Vector3(0.035659455, 0.048109043, 0.03767529)
 
 [node name="metalChair" type="StaticBody3D" unique_id=1171288618]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="MetalFoldChair" type="MeshInstance3D" parent="." unique_id=1676425914]
 transform = Transform3D(99.9994, -0.3468332, 1.192678e-05, 0.3468332, 99.9994, -4.3711125e-06, -1.19115475e-05, 4.4124527e-06, 100, 0, 0, 0)

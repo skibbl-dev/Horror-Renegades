@@ -52,6 +52,7 @@ albedo_texture = ExtResource("1_jf7kg")
 size = Vector3(0.13191828, 0.044833545, 0.05034472)
 
 [node name="desk" type="StaticBody3D" unique_id=1171288618]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="Desk" type="MeshInstance3D" parent="." unique_id=803836353]
 transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, 0, 0, 0)

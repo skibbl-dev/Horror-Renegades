@@ -48,6 +48,7 @@ shadow_mesh = SubResource("ArrayMesh_k4kfb")
 size = Vector3(0.035727456, 0.031101383, 0.040174186)
 
 [node name="box1" type="StaticBody3D" unique_id=1171288618]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="CardboardBox1" type="MeshInstance3D" parent="." unique_id=1922647226]
 transform = Transform3D(-83.096, 55.633236, 0, 2.9802322e-06, 0, 100, 55.633236, 83.09599, -1.1920929e-05, 0, 0, 0)

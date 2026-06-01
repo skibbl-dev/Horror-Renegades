@@ -50,6 +50,7 @@ albedo_texture = ExtResource("1_jnge1")
 size = Vector3(0.0061531854, 0.06747408, 0.13308227)
 
 [node name="Door3" type="StaticBody3D" unique_id=302408705]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
 
 [node name="Door2" type="MeshInstance3D" parent="." unique_id=240880531]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -1.0175633, 6.6541133, -1.6262984)

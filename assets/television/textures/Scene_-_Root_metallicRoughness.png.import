@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3op73ttply7o"
-path.s3tc="res://.godot/imported/rug_1.jpg-70b1fcc3b3fe4b8ff624b83814633643.s3tc.ctex"
+uid="uid://bo47m6ppw1yvv"
+path.s3tc="res://.godot/imported/Scene_-_Root_metallicRoughness.png-dbc0f276ce528a5b329b656d73c3dd4f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/house/Rugs/rug_1.jpg"
-dest_files=["res://.godot/imported/rug_1.jpg-70b1fcc3b3fe4b8ff624b83814633643.s3tc.ctex"]
+source_file="res://assets/television/textures/Scene_-_Root_metallicRoughness.png"
+dest_files=["res://.godot/imported/Scene_-_Root_metallicRoughness.png-dbc0f276ce528a5b329b656d73c3dd4f.s3tc.ctex"]
 
 [params]
 

@@ -238,6 +238,7 @@ albedo_texture = ExtResource("1_humwq")
 size = Vector3(0.07486452, 0.19569616, 0.06686277)
 
 [node name="couch" type="StaticBody3D" unique_id=1171288618]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
 
 [node name="Couch" type="MeshInstance3D" parent="." unique_id=97065330]
 transform = Transform3D(0, 100, 2.9802322e-06, 2.9802322e-06, 0, 100, 100, 2.9802322e-06, 0, 0, 0, 0)

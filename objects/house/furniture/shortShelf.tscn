@@ -53,6 +53,7 @@ uv1_offset = Vector3(-7.41, 1.95, 0.55)
 size = Vector3(0.08827619, 0.03417557, 0.06035222)
 
 [node name="shortShelf" type="StaticBody3D" unique_id=1171288618]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="Short_Drawer_001" type="MeshInstance3D" parent="." unique_id=169863610]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)

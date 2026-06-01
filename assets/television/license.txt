@@ -1,0 +1,11 @@
+Model Information:
+* title:	Televisión
+* source:	https://sketchfab.com/3d-models/television-844306b23f354d3fbb08de8b67b5eafd
+* author:	Elbolillo (https://sketchfab.com/Elbolilloduro)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Televisión" (https://sketchfab.com/3d-models/television-844306b23f354d3fbb08de8b67b5eafd) by Elbolillo (https://sketchfab.com/Elbolilloduro) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

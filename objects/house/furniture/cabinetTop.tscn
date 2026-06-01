@@ -116,6 +116,7 @@ shadow_mesh = SubResource("ArrayMesh_y115u")
 size = Vector3(0.05453421, 0.055038422, 0.054400966)
 
 [node name="cabinetTop" type="StaticBody3D" unique_id=1171288618]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="CounterTop" type="MeshInstance3D" parent="." unique_id=160275215]
 transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, 0, 0, 0)
