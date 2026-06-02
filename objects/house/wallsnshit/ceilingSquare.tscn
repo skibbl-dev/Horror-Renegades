@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://b730fugsqqc7b"]
 
-[ext_resource type="Material" uid="uid://ckvmr2j6b1yes" path="res://assets/house/Materials/ceiling1.tres" id="1_4kjwt"]
+[ext_resource type="Material" uid="uid://bc07uul7e66uf" path="res://assets/house/Materials/ceiling.tres" id="1_4kjwt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n8ij2"]
 resource_name = "Ceiling1"
