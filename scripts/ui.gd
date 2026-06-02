@@ -4,9 +4,14 @@ extends Control
 
 func _process(_delta: float) -> void:
 	if player.raycast.is_colliding():
-		if player.raycast.get_collider().is_in_group("pickable"):
+		var target = player.raycast.get_collider()
+		
+		if target.is_in_group("pickable") or target.is_in_group("interactable"):
 			$crosshair.hide()
 			$crosshair_select.show()
-	else: 
+		else:
+			$crosshair_select.hide()
+			$crosshair.show()
+	else:
 		$crosshair_select.hide()
 		$crosshair.show()

@@ -120,31 +120,30 @@ func pickup():
 		
 	if !holding and Input.is_action_just_pressed("interact") and raycast.is_colliding():
 		var object = raycast.get_collider()
+		
+		if object.is_in_group("interactable") and object.has_method("interact"):
+			object.interact()
+			return 
+		
+		
 		if object is RigidBody3D and object.is_in_group("pickable"):
 			picked = true
 			holding = true
 			held_item = object
-			
 			held_item.get_node("CollisionShape3D").disabled = true
-			
 			main.remove_child(held_item)
 			camera.add_child(held_item)
 			
+	
 	if picked and holding:
 		held_item.global_position = pickup_area.global_position
 		if held_item.is_in_group("pickable") and not held_item.is_in_group("usable"):
-			#held_item.scale = Vector3(.5,.5,.5)
 			held_item.look_at(head.global_position)
-			#held_item.look_at(Vector3(global_position.x, held_item.global_position.y, global_position.z))
 		elif held_item.is_in_group("usable"):
 			if held_item and held_item.is_in_group("usable"):
-				#var cam_rot = camera.rotation
-				#held_item.rotation.y = 0
-				#held_item.rotation.x = cam_rot.y
-				#held_item.rotation.z = 0
 				held_item.look_at(head.global_position)
 				held_item.global_position = pickup_area.global_position
-				#held_item.translate_object_local(Vector3(0.2, -0.2, -0.5))
+
 
 func drop():
 	picked = false

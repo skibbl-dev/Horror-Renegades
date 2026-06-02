@@ -4,6 +4,24 @@
 [ext_resource type="Script" uid="uid://blvasbyklvdcv" path="res://scripts/top_door.gd" id="2_r0tmb"]
 [ext_resource type="Script" uid="uid://cqo8xcwugy1av" path="res://scripts/bottom_door.gd" id="3_w20u7"]
 
+[sub_resource type="GDScript" id="GDScript_nwiep"]
+script/source = "extends StaticBody3D
+
+@onready var anim_player: AnimationPlayer = $AnimationPlayer
+var top_is_open: bool = false
+
+func interact() -> void:
+	if anim_player.is_playing():
+		return
+		
+	if top_is_open:
+		anim_player.play(\"fridge_top_close\")
+	else:
+		anim_player.play(\"fridge_top_open\")
+		
+	top_is_open = !top_is_open
+"
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eg0ot"]
 resource_name = "Fridge"
 transparency = 4
@@ -397,6 +415,7 @@ size = Vector3(0.051690772, 0.0060076453, 0.04964633)
 
 [node name="fridge" type="StaticBody3D" unique_id=1171288618]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+script = SubResource("GDScript_nwiep")
 
 [node name="Fridge" type="MeshInstance3D" parent="." unique_id=1598998055]
 transform = Transform3D(0, -100, -2.9802322e-06, -2.9802322e-06, 0, 100, -100, 2.9802322e-06, 0, 0, 0, 0)
