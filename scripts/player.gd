@@ -58,7 +58,8 @@ func _physics_process(delta):
 
 	# Handle jumping when jump button pressed and player is on floor
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+		#velocity.y = JUMP_VELOCITY
+		pass
 
 	# Handle sprinting input
 	if Input.is_action_pressed("sprint"):

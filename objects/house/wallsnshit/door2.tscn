@@ -1,6 +1,62 @@
 [gd_scene format=4 uid="uid://b2phngnicyak7"]
 
 [ext_resource type="Texture2D" uid="uid://dhy5k5hfsa55p" path="res://assets/house/Doors/Door1.jpg" id="1_uyop3"]
+[ext_resource type="Script" uid="uid://ccqrshpyyera3" path="res://scripts/door.gd" id="1_v6wun"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uyop3"]
+size = Vector3(0.006153179, 0.06747409, 0.13308227)
+
+[sub_resource type="Animation" id="Animation_e0pdx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marker3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_2b07d"]
+resource_name = "close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marker3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(2.0000005, 1),
+"update": 0,
+"values": [Vector3(0, 1.5707964, 0), Vector3(0, 5.92119e-15, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_hxbca"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marker3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1.8660665, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5707964, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dm4cs"]
+_data = {
+&"RESET": SubResource("Animation_e0pdx"),
+&"close": SubResource("Animation_2b07d"),
+&"open": SubResource("Animation_hxbca")
+}
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ioofc"]
 resource_name = "Door1"
@@ -46,17 +102,32 @@ shadow_mesh = SubResource("ArrayMesh_l1qcd")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e0pdx"]
 albedo_texture = ExtResource("1_uyop3")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_uyop3"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_j53ux"]
 size = Vector3(0.006153179, 0.06747409, 0.13308227)
 
 [node name="Door2" type="StaticBody3D" unique_id=302408705]
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
 
-[node name="Door1" type="MeshInstance3D" parent="." unique_id=1736500377]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1407112389]
+transform = Transform3D(-100, 3.8941438e-05, -2.842171e-12, 0, 5.9604645e-06, 100, 3.8941438e-05, 100, -1.1920929e-05, -1.3137691e-06, -2.0108845e-07, -3.3737044)
+shape = SubResource("BoxShape3D_uyop3")
+disabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2024591866]
+libraries/ = SubResource("AnimationLibrary_dm4cs")
+
+[node name="Marker3D" type="Marker3D" parent="." unique_id=2146172718]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0)
+
+[node name="door" type="StaticBody3D" parent="Marker3D" unique_id=120451644 groups=["interactable"]]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
+script = ExtResource("1_v6wun")
+
+[node name="Door1" type="MeshInstance3D" parent="Marker3D/door" unique_id=1736500377]
 transform = Transform3D(-100, 3.8941438e-05, -2.842171e-12, 0, 5.9604645e-06, 100, 3.8941438e-05, 100, -1.1920929e-05, 0, 0, 0)
 mesh = SubResource("ArrayMesh_v6wun")
 surface_material_override/0 = SubResource("StandardMaterial3D_e0pdx")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1407112389]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Marker3D/door" unique_id=763672966]
 transform = Transform3D(-100, 3.8941438e-05, -2.842171e-12, 0, 5.9604645e-06, 100, 3.8941438e-05, 100, -1.1920929e-05, -1.3137691e-06, -2.0108845e-07, -3.3737044)
-shape = SubResource("BoxShape3D_uyop3")
+shape = SubResource("BoxShape3D_j53ux")
