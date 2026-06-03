@@ -218,6 +218,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.642163)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1449683, 0, 0)
 
 [node name="Player" parent="." unique_id=882706492 instance=ExtResource("2_7ykc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.546367, 1.3151151, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=569487553]
 environment = SubResource("Environment_pw63i")

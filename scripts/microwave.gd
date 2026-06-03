@@ -1,11 +1,13 @@
 extends StaticBody3D
 
-@onready var anim_player: AnimationPlayer = $"../AnimationPlayer"
-
+@onready var animation_player: AnimationPlayer = $"../../AnimationPlayer"
 
 var open = false
 
 func interact() -> void:
 	if open == false:
-		anim_player.play("open")
+		animation_player.play("open")
 		open = true
+	else:
+		animation_player.play("close")
+		open = false
