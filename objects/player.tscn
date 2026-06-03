@@ -5,6 +5,7 @@
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_onrkg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_i3pqv"]
+radius = 0.38964844
 height = 1.8166504
 
 [node name="Player" type="CharacterBody3D" unique_id=882706492 groups=["player"]]
