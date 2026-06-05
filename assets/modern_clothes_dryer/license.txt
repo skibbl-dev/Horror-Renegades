@@ -1,0 +1,11 @@
+Model Information:
+* title:	Modern Clothes Dryer
+* source:	https://sketchfab.com/3d-models/modern-clothes-dryer-ea0080f2433b41578145944a3d0b350c
+* author:	Glowbox 3D (https://sketchfab.com/ra3id)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Modern Clothes Dryer" (https://sketchfab.com/3d-models/modern-clothes-dryer-ea0080f2433b41578145944a3d0b350c) by Glowbox 3D (https://sketchfab.com/ra3id) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

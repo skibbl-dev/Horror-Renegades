@@ -1,0 +1,11 @@
+Model Information:
+* title:	Washer Dryer Machine
+* source:	https://sketchfab.com/3d-models/washer-dryer-machine-8358b47f171d43e98f473083ce55b36e
+* author:	rhcreations (https://sketchfab.com/rhcreations)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Washer Dryer Machine" (https://sketchfab.com/3d-models/washer-dryer-machine-8358b47f171d43e98f473083ce55b36e) by rhcreations (https://sketchfab.com/rhcreations) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

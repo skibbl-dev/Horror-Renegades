@@ -35,6 +35,10 @@ folder_colors={
 "res://scripts/": "green"
 }
 
+[filesystem]
+
+import/blender/enabled=false
+
 [global_group]
 
 pickable=""

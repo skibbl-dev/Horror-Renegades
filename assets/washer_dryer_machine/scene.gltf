@@ -1,0 +1,1051 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 589,
+      "max": [
+        1.0,
+        1.0,
+        2.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 7068,
+      "componentType": 5126,
+      "count": 589,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 589,
+      "max": [
+        2.406140089035034,
+        2.5
+      ],
+      "min": [
+        -1.5,
+        -1.5
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 2178,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 14136,
+      "componentType": 5126,
+      "count": 1292,
+      "max": [
+        0.8926299810409546,
+        -0.8331500291824341,
+        1.9505800008773804
+      ],
+      "min": [
+        -0.21953999996185303,
+        -1.0697599649429321,
+        1.7409700155258179
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 29640,
+      "componentType": 5126,
+      "count": 1292,
+      "max": [
+        0.991807758808136,
+        1.0,
+        0.9971760511398315
+      ],
+      "min": [
+        -0.991807758808136,
+        -1.0,
+        -0.9971767663955688
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 4712,
+      "componentType": 5126,
+      "count": 1292,
+      "max": [
+        1.0,
+        0.9381899833679199
+      ],
+      "min": [
+        0.0,
+        0.15076999366283417
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 8712,
+      "componentType": 5125,
+      "count": 3792,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 45144,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.7160000205039978,
+        -0.9852200150489807,
+        1.957859992980957
+      ],
+      "min": [
+        0.29131999611854553,
+        -0.9852200150489807,
+        1.8119699954986572
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 45192,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "min": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 15048,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.9955400228500366,
+        0.9491999745368958
+      ],
+      "min": [
+        0.01662999950349331,
+        0.05079999938607216
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 23880,
+      "componentType": 5125,
+      "count": 6,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 45240,
+      "componentType": 5126,
+      "count": 382,
+      "max": [
+        -0.44370999932289124,
+        0.9002100229263306,
+        0.2408200055360794
+      ],
+      "min": [
+        -0.8664000034332275,
+        0.6220499873161316,
+        0.08250000327825546
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 49824,
+      "componentType": 5126,
+      "count": 382,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 15080,
+      "componentType": 5126,
+      "count": 382,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 23904,
+      "componentType": 5125,
+      "count": 936,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 54408,
+      "componentType": 5126,
+      "count": 704,
+      "max": [
+        1.6857500076293945,
+        0.0,
+        0.644540011882782
+      ],
+      "min": [
+        0.0,
+        -0.07694999873638153,
+        -0.644540011882782
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 62856,
+      "componentType": 5126,
+      "count": 704,
+      "max": [
+        0.991807758808136,
+        1.0,
+        0.9971760511398315
+      ],
+      "min": [
+        -0.991807758808136,
+        -1.0,
+        -0.9971760511398315
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 27648,
+      "componentType": 5125,
+      "count": 1344,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 71304,
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        1.5035099983215332,
+        -0.0384799987077713,
+        0.5051800012588501
+      ],
+      "min": [
+        0.1822499930858612,
+        -0.0384799987077713,
+        -0.5051800012588501
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 71736,
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        0.0,
+        1.0,
+        9.999999747378752e-06
+      ],
+      "min": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 33024,
+      "componentType": 5125,
+      "count": 90,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 72168,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        0.8428800106048584,
+        -0.0,
+        0.644540011882782
+      ],
+      "min": [
+        -0.8428800106048584,
+        -1.2523800134658813,
+        -0.644540011882782
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 73704,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        0.991656482219696,
+        0.01746993698179722,
+        0.9970855712890625
+      ],
+      "min": [
+        -0.991656482219696,
+        0.013429940678179264,
+        -0.9970855712890625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18136,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        1.1010099649429321,
+        1.3375300168991089
+      ],
+      "min": [
+        -0.12624000012874603,
+        -0.5023000240325928
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 33384,
+      "componentType": 5125,
+      "count": 192,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 75240,
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        0.8428800106048584,
+        -0.0,
+        0.644540011882782
+      ],
+      "min": [
+        -0.8428800106048584,
+        -0.0,
+        -0.644540011882782
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 75672,
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        9.999999747378752e-06,
+        -1.0,
+        9.999999747378752e-06
+      ],
+      "min": [
+        -9.999999747378752e-06,
+        -1.0,
+        0.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 19160,
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        1.0,
+        0.9981499910354614
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 34152,
+      "componentType": 5125,
+      "count": 90,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 76104,
+      "componentType": 5126,
+      "count": 143,
+      "max": [
+        -0.3362500071525574,
+        -1.0354100465774536,
+        0.9541400074958801
+      ],
+      "min": [
+        -0.933899998664856,
+        -1.424489974975586,
+        0.7018600106239319
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 77820,
+      "componentType": 5126,
+      "count": 143,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 19448,
+      "componentType": 5126,
+      "count": 143,
+      "max": [
+        0.9222000241279602,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 34512,
+      "componentType": 5125,
+      "count": 375,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "rhcreations (https://sketchfab.com/rhcreations)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/washer-dryer-machine-8358b47f171d43e98f473083ce55b36e",
+      "title": "Washer Dryer Machine"
+    },
+    "generator": "Sketchfab-12.65.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 36012,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 20592,
+      "byteOffset": 36012,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 79536,
+      "byteOffset": 56604,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 136140,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "images": [
+    {
+      "uri": "textures/White_Metal_Material_diffuse.jpeg"
+    },
+    {
+      "uri": "textures/Buttons_and_Drawer_Material_diffuse.png"
+    },
+    {
+      "uri": "textures/Digital_Display_Material_diffuse.jpeg"
+    },
+    {
+      "uri": "textures/Drum_Material_diffuse.jpeg"
+    },
+    {
+      "uri": "textures/Drum_Back_Material_diffuse.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 0
+          },
+          "glossinessFactor": 0.609929084777832,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "name": "White_Metal_Material"
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 1
+          },
+          "glossinessFactor": 1.0,
+          "specularFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularGlossinessTexture": {
+            "index": 1
+          }
+        }
+      },
+      "name": "Buttons_and_Drawer_Material"
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 2
+          },
+          "glossinessFactor": 1.0,
+          "specularFactor": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "name": "Digital_Display_Material"
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "glossinessFactor": 0.9007092192769051,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "name": "Dryer_1_Metal_Material"
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            0.17195489727547442
+          ],
+          "glossinessFactor": 1.0,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "name": "Glass_Material"
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 3
+          },
+          "glossinessFactor": 0.7777777761220932,
+          "specularFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularGlossinessTexture": {
+            "index": 3
+          }
+        }
+      },
+      "name": "Drum_Material"
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 4
+          },
+          "glossinessFactor": 0.4193548560142517,
+          "specularFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularGlossinessTexture": {
+            "index": 4
+          }
+        }
+      },
+      "name": "Drum_Back_Material"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Simple Dryer_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Simple Dryer_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Simple Dryer_2",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Simple Dryer_3",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Washer Dryer 1 Door.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 17,
+            "POSITION": 16
+          },
+          "indices": 18,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Washer Dryer 1 Door.001_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 20,
+            "POSITION": 19
+          },
+          "indices": 21,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Washer Dryer 1 Drum_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 23,
+            "POSITION": 22,
+            "TEXCOORD_0": 24
+          },
+          "indices": 25,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Washer Dryer 1 Drum_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 27,
+            "POSITION": 26,
+            "TEXCOORD_0": 28
+          },
+          "indices": 29,
+          "material": 6,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Washer Dryer 1 Drawer_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 31,
+            "POSITION": 30,
+            "TEXCOORD_0": 32
+          },
+          "indices": 33,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        13
+      ],
+      "matrix": [
+        -0.0,
+        4.40641,
+        0.0,
+        0.0,
+        -4.40641,
+        -0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        5.76235,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Simple Dryer"
+    },
+    {
+      "mesh": 0,
+      "name": "Simple Dryer_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Simple Dryer_1"
+    },
+    {
+      "mesh": 2,
+      "name": "Simple Dryer_2"
+    },
+    {
+      "mesh": 3,
+      "name": "Simple Dryer_3"
+    },
+    {
+      "children": [
+        8,
+        9
+      ],
+      "matrix": [
+        1.0,
+        -0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.8428800000000001,
+        -1.0,
+        1.03209,
+        1.0
+      ],
+      "name": "Washer Dryer 1 Door.001"
+    },
+    {
+      "mesh": 4,
+      "name": "Washer Dryer 1 Door.001_0"
+    },
+    {
+      "mesh": 5,
+      "name": "Washer Dryer 1 Door.001_1"
+    },
+    {
+      "children": [
+        11,
+        12
+      ],
+      "matrix": [
+        1.0,
+        -0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.46143,
+        1.03209,
+        1.0
+      ],
+      "name": "Washer Dryer 1 Drum"
+    },
+    {
+      "mesh": 6,
+      "name": "Washer Dryer 1 Drum_0"
+    },
+    {
+      "mesh": 7,
+      "name": "Washer Dryer 1 Drum_1"
+    },
+    {
+      "children": [
+        14
+      ],
+      "matrix": [
+        1.0,
+        -0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.42114,
+        1.0,
+        1.0
+      ],
+      "name": "Washer Dryer 1 Drawer"
+    },
+    {
+      "mesh": 8,
+      "name": "Washer Dryer 1 Drawer_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    }
+  ]
+}

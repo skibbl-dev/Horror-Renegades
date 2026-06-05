@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://cc50m4xkcjm28" path="res://objects/house/wallsnshit/wallCorner.tscn" id="18_adb74"]
 [ext_resource type="PackedScene" uid="uid://cly8cjvfrky8e" path="res://objects/house/wallsnshit/floorSingle.tscn" id="20_adb74"]
 [ext_resource type="Material" uid="uid://b3f8w2m7pbhnw" path="res://assets/house/Materials/floor3.tres" id="20_onjth"]
+[ext_resource type="PackedScene" uid="uid://c7pi65u6cgt0b" path="res://objects/house/furniture/dryer.tscn" id="21_1a541"]
 [ext_resource type="PackedScene" uid="uid://c0odqoycogfx4" path="res://objects/house/wallsnshit/wallEdge.tscn" id="21_58gk3"]
 [ext_resource type="PackedScene" uid="uid://jcpipb4ypogm" path="res://objects/house/furniture/couch.tscn" id="22_to7gp"]
 [ext_resource type="PackedScene" uid="uid://c6a4j7sjjg423" path="res://objects/house/furniture/metalChair.tscn" id="23_u0fll"]
@@ -64,6 +65,8 @@
 [ext_resource type="PackedScene" uid="uid://7u6hnl1wtrvt" path="res://objects/house/furniture/airconditioner.tscn" id="59_qw8n7"]
 [ext_resource type="PackedScene" uid="uid://bukhmi2o0oxdq" path="res://objects/house/furniture/box1.tscn" id="60_taqkn"]
 [ext_resource type="PackedScene" uid="uid://k84vfpnmmpyn" path="res://objects/house/furniture/box3.tscn" id="61_qnap4"]
+[ext_resource type="PackedScene" uid="uid://bk6jk3bi4fpv6" path="res://objects/house/furniture/mattress-bent.tscn" id="66_gwxm2"]
+[ext_resource type="PackedScene" uid="uid://upndkqe1wv4t" path="res://objects/house/furniture/washer.scn" id="67_1a541"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pu3yx"]
 size = Vector3(10, 1, 10)
@@ -718,6 +721,9 @@ mesh = SubResource("ArrayMesh_k1hag")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="House/floor7" unique_id=857679886]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 10, -0.047737863, -10)
 shape = SubResource("BoxShape3D_o7hlm")
+
+[node name="dryer" parent="House" unique_id=1988460416 instance=ExtResource("21_1a541")]
+transform = Transform3D(0.032, 0, 0, 0, 0.032, 0, 0, 0, 0.032, 25.05, -0.20000003, -4.8999996)
 
 [node name="floor17" type="StaticBody3D" parent="House" unique_id=718586784]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 24.849998, -0.2, -5.9500003)
@@ -1664,7 +1670,7 @@ transform = Transform3D(-0.026047228, 0, -0.14772116, 0, 0.14999999, 0, 0.147721
 [node name="bedFrame2" parent="House" unique_id=238386568 instance=ExtResource("47_267kh")]
 transform = Transform3D(0.15, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 16.7, 5.8, -11.650001)
 
-[node name="toilet" parent="House" unique_id=1988460416 instance=ExtResource("52_qnap4")]
+[node name="toilet" parent="House" unique_id=629321006 instance=ExtResource("52_qnap4")]
 transform = Transform3D(-0.7, 0, -1.0569706e-07, 0, 0.7, 0, 1.0569706e-07, 0, -0.7, 21.550001, 0.5, -6.3500004)
 
 [node name="bathroom-sinkn" parent="House" unique_id=1144571875 instance=ExtResource("53_1sx6m")]
@@ -1958,3 +1964,12 @@ transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 18.050001, 5.4, -11.85)
 
 [node name="box3" parent="House" unique_id=2093989611 instance=ExtResource("61_qnap4")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 18.35, 5.4, -11.150001)
+
+[node name="bathroom-sinkn2" parent="House" unique_id=1799508206 instance=ExtResource("53_1sx6m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.750002, 0.65000004, -7.35)
+
+[node name="bentMattress" parent="House" unique_id=1376104260 instance=ExtResource("66_gwxm2")]
+transform = Transform3D(0.18793854, -0.06427877, -0.023395553, 7.18003e-09, 0.06840403, -0.18793853, 0.068404034, 0.17660442, 0.06427876, 29.250002, 0.95, -7.5500007)
+
+[node name="washer" parent="." unique_id=1517198300 instance=ExtResource("67_1a541")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 25, -0.2, -3.8500001)
