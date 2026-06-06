@@ -67,6 +67,7 @@
 [ext_resource type="PackedScene" uid="uid://k84vfpnmmpyn" path="res://objects/house/furniture/box3.tscn" id="61_qnap4"]
 [ext_resource type="PackedScene" uid="uid://bk6jk3bi4fpv6" path="res://objects/house/furniture/mattress-bent.tscn" id="66_gwxm2"]
 [ext_resource type="PackedScene" uid="uid://upndkqe1wv4t" path="res://objects/house/furniture/washer.scn" id="67_1a541"]
+[ext_resource type="PackedScene" uid="uid://4go3pbs06t77" path="res://objects/house/furniture/picture_frame.tscn" id="68_gwxm2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pu3yx"]
 size = Vector3(10, 1, 10)
@@ -1973,3 +1974,6 @@ transform = Transform3D(0.18793854, -0.06427877, -0.023395553, 7.18003e-09, 0.06
 
 [node name="washer" parent="." unique_id=1517198300 instance=ExtResource("67_1a541")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 25, -0.2, -3.8500001)
+
+[node name="pictureFrame" parent="." unique_id=203445377 instance=ExtResource("68_gwxm2")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 19.7, 6.85, 1.5500001)
