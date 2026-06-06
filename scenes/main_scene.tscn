@@ -1692,7 +1692,7 @@ transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 16.800001, 0.95000005, 
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 16.8, 1.0500002, -5.1)
 
 [node name="tallDrawer" parent="House" unique_id=1103687563 instance=ExtResource("51_cq0lk")]
-transform = Transform3D(0.2, 0, 4.0978193e-08, 0, 0.20000003, 0, -4.0978193e-08, 0, 0.2, 21.25, 6, -1.45)
+transform = Transform3D(0.18, 0, 3.6880376e-08, 0, 0.18, 0, -3.6880376e-08, 0, 0.18, 21.25, 5.95, -1.45)
 
 [node name="VertHalf103" parent="House" unique_id=238570432 instance=ExtResource("37_xa0eo")]
 transform = Transform3D(0.14999999, 0, 0, 0, -6.556708e-09, 0.14999999, 0, -0.14999999, -6.556708e-09, 28.082663, 7.7330627, -0.15)

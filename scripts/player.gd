@@ -23,6 +23,15 @@ var gravity = 9.8
 @onready var camera = $head/Camera3D
 var base_camera_pos : Vector3
 
+@onready var collision_shape: CollisionShape3D = $CollisionShape3D
+
+const CROUCH_SPEED = 2.0
+const CROUCH_CAMERA_Y = -0.30
+const CROUCH_HEIGHT = 0.7
+
+var crouching := false
+var standing_height := 0.0
+
 #picking up
 @onready var raycast: RayCast3D = $head/Camera3D/RayCast3D
 @onready var pickup_area: Marker3D = $head/Camera3D/pickup_area
@@ -33,6 +42,9 @@ var holding: bool = false
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	base_camera_pos = camera.transform.origin
+
+	if collision_shape.shape is CapsuleShape3D:
+		standing_height = collision_shape.shape.height
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -56,13 +68,22 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 
+	# Toggle crouch
+	if Input.is_action_just_pressed("crouch"):
+		if crouching:
+			if can_stand():
+				crouching = false
+		else:
+			crouching = true
+
 	# Handle jumping when jump button pressed and player is on floor
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		#velocity.y = JUMP_VELOCITY
 		pass
 
-	# Handle sprinting input
-	if Input.is_action_pressed("sprint"):
+	if crouching:
+		speed = CROUCH_SPEED
+	elif Input.is_action_pressed("sprint"):
 		speed = SPRINT_SPEED
 	else:
 		speed = WALK_SPEED
@@ -95,13 +116,38 @@ func _physics_process(delta):
 	can_bob = is_on_floor()
 	t_bob += delta * velocity.length() * float(can_bob)
 	var bob_offset = _headbob(t_bob)
-	camera.transform.origin = base_camera_pos + bob_offset
+	var target_camera_y = base_camera_pos.y
+
+	if crouching:
+		target_camera_y += CROUCH_CAMERA_Y
+
+	camera.transform.origin.x = base_camera_pos.x + bob_offset.x
+	camera.transform.origin.z = base_camera_pos.z
+
+	camera.transform.origin.y = lerp(
+		camera.transform.origin.y,
+		target_camera_y + bob_offset.y,
+		delta * 10.0
+	)
 
 	# Adjust FOV based on movement speed for sprint effect
 	var velocity_clamped = clamp(velocity.length(), 0.5, SPRINT_SPEED * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 	camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
 
+
+	if collision_shape.shape is CapsuleShape3D:
+		var target_height = standing_height
+
+		if crouching:
+			target_height = CROUCH_HEIGHT
+
+		collision_shape.shape.height = lerp(
+			collision_shape.shape.height,
+			target_height,
+			delta * 10.0
+		)
+	
 	move_and_slide()
 
 func _headbob(time) -> Vector3:
@@ -111,6 +157,17 @@ func _headbob(time) -> Vector3:
 		pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP # Horizontal bobbing
 	return pos
 
+func can_stand() -> bool:
+	var space_state = get_world_3d().direct_space_state
+
+	var query = PhysicsRayQueryParameters3D.create(
+		global_position,
+		global_position + Vector3.UP * 2.0
+	)
+
+	query.exclude = [self]
+
+	return space_state.intersect_ray(query).is_empty()
 func _process(_delta: float) -> void:
 	pickup()
 
