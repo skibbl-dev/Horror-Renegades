@@ -1,6 +1,6 @@
 extends StaticBody3D
 
-@onready var anim: AnimationPlayer = $"../AnimationPlayer"
+@onready var anim: AnimationPlayer = $"../../AnimationPlayer"
 
 var is_open: bool = false
 

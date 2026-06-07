@@ -84,6 +84,12 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ln2k6")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3qgnl"]
+albedo_texture = ExtResource("2_7ttjp")
+emission_enabled = true
+emission = Color(1, 0.89827347, 0.35419908, 1)
+emission_energy_multiplier = 0.25
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_ali4h"]
 size = Vector3(0.017578125, 0.017578125, 0.12079455)
 
@@ -96,8 +102,16 @@ mesh = SubResource("ArrayMesh_6otoi")
 
 [node name="LampShade" type="MeshInstance3D" parent="Lamp" unique_id=614823565]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.6293944e-08, 0.119538955)
+cast_shadow = 0
 mesh = SubResource("ArrayMesh_rjunc")
+surface_material_override/0 = SubResource("StandardMaterial3D_3qgnl")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1553234403]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 5.9141674, -0.017248705)
 shape = SubResource("BoxShape3D_ali4h")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=161860694]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.65576, 0)
+light_color = Color(1, 0.89827347, 0.432765, 1)
+light_energy = 1.5
+shadow_enabled = true

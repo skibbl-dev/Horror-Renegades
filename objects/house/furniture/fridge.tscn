@@ -158,7 +158,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("topDoor:rotation")
+tracks/0/path = NodePath("top:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -170,34 +170,10 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("topDoor:position")
+tracks/1/path = NodePath("bottom:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("bottomDoor:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("bottomDoor:rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -209,53 +185,30 @@ resource_name = "bottom_close"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("bottomDoor:position")
+tracks/0/path = NodePath("bottom:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.30833334),
-"transitions": PackedFloat32Array(2.9281707, 1.4640859),
+"times": PackedFloat32Array(0, 0.21),
+"transitions": PackedFloat32Array(2.1435473, 1),
 "update": 0,
-"values": [Vector3(4.5921516, 0, -3.6781898), Vector3(0.015724301, 0, 0.010389835)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("bottomDoor:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.30833334),
-"transitions": PackedFloat32Array(2.9281707, 1.4640859),
-"update": 0,
-"values": [Vector3(0, 1.5707964, 0), Vector3(0, 0, 0)]
+"values": [Vector3(0, 1.7717885, 0), Vector3(0, 0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_nb2ku"]
 resource_name = "bottom_open"
+length = 1.0666667
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("bottomDoor:position")
+tracks/0/path = NodePath("bottom:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.31),
-"transitions": PackedFloat32Array(3.8637452, 1.2745607),
+"times": PackedFloat32Array(0, 0.21),
+"transitions": PackedFloat32Array(1, 1.8025011),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(4.5921516, 0, -3.6781898)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("bottomDoor:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.31),
-"transitions": PackedFloat32Array(3.8637452, 1.2745607),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 1.5707964, 0)]
+"values": [Vector3(0, 0, 0), Vector3(0, 1.7717885, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_w20u7"]
@@ -263,26 +216,14 @@ resource_name = "top_close"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("topDoor:position")
+tracks/0/path = NodePath("top:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.32),
-"transitions": PackedFloat32Array(2.297397, 0.1961461),
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1.7411015, 1),
 "update": 0,
-"values": [Vector3(4.6945148, 0, -3.4829261), Vector3(-0.031911284, 0, -0.033195466)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("topDoor:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.32),
-"transitions": PackedFloat32Array(2.297397, 0.1961461),
-"update": 0,
-"values": [Vector3(0, 1.5707964, 0), Vector3(0, 0, 0)]
+"values": [Vector3(0, 1.8139381, 0), Vector3(0, 0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_nwiep"]
@@ -290,26 +231,14 @@ resource_name = "top_open"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("topDoor:rotation")
+tracks/0/path = NodePath("top:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.26666668),
-"transitions": PackedFloat32Array(2.5491211, 1.6817932),
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1.4640859, 1),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 1.5707964, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("topDoor:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.26666668),
-"transitions": PackedFloat32Array(2.5491211, 1.6817932),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(4.6945148, 0, -3.4829261)]
+"values": [Vector3(0, 0, 0), Vector3(0, 1.8139381, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_46bcu"]
@@ -429,25 +358,33 @@ shape = SubResource("BoxShape3D_46bcu")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=988498553]
 libraries/ = SubResource("AnimationLibrary_46bcu")
 
-[node name="topDoor" type="StaticBody3D" parent="." unique_id=1086394158 groups=["interactable"]]
+[node name="top" type="Marker3D" parent="." unique_id=458305356]
+transform = Transform3D(5.000002, 0, 0, 0, 5.0000005, 0, 0, 0, 5.000002, 0.478349, 4.0819187, -3.8939521)
+
+[node name="topDoor" type="StaticBody3D" parent="top" unique_id=1086394158 groups=["interactable"]]
+transform = Transform3D(0.2, 0, 3.496911e-08, 0, 0.20000023, 0, -3.496911e-08, 0, 0.2, -0.09786452, -0.80000055, 0.7744227)
 script = ExtResource("2_r0tmb")
 
-[node name="top_door" type="MeshInstance3D" parent="topDoor" unique_id=430280568]
+[node name="top_door" type="MeshInstance3D" parent="top/topDoor" unique_id=430280568]
 transform = Transform3D(1.9470717e-05, -99.99999, -4.3711384e-06, 0, -4.3711384e-06, 99.99999, -99.99999, -1.9470717e-05, -8.5109204e-13, 0.5792852, 4.2916994, -4.1849976)
 mesh = SubResource("ArrayMesh_p5dri")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="topDoor" unique_id=1256447243]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="top/topDoor" unique_id=1256447243]
 transform = Transform3D(2.0861624e-05, -99.99999, -2.980232e-06, -2.9802322e-06, -5.684341e-13, 99.99999, -99.99999, -2.3841856e-05, -5.960464e-06, 0.85695875, 7.1010823, -1.5827069)
 shape = SubResource("BoxShape3D_nb2ku")
 debug_color = Color(0.9222705, 0.17821404, 0.53865284, 0.41960785)
 
-[node name="bottomDoor" type="StaticBody3D" parent="." unique_id=1008632298 groups=["interactable"]]
+[node name="bottom" type="Marker3D" parent="." unique_id=347806168]
+transform = Transform3D(5.0000005, 0, 0, 0, 5, 0, 0, 0, 5.0000005, 0.28074026, 0, -3.7294266)
+
+[node name="bottomDoor" type="StaticBody3D" parent="bottom" unique_id=1008632298 groups=["interactable"]]
+transform = Transform3D(0.2000001, 0, 0, 0, 0.20000003, 0, 0, 0, 0.2000001, -0.053109735, 0, 0.7439445)
 script = ExtResource("3_w20u7")
 
-[node name="bottom_door" type="MeshInstance3D" parent="bottomDoor" unique_id=1947850440]
+[node name="bottom_door" type="MeshInstance3D" parent="bottom/bottomDoor" unique_id=1947850440]
 transform = Transform3D(1.9470717e-05, -99.99999, -4.3711384e-06, 0, -4.3711384e-06, 99.99999, -99.99999, -1.9470717e-05, -8.5109204e-13, 0.5792851, 4.2916994, -4.1849976)
 mesh = SubResource("ArrayMesh_jdl7d")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="bottomDoor" unique_id=973246800]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bottom/bottomDoor" unique_id=973246800]
 transform = Transform3D(2.0861626e-05, -99.99999, -2.980232e-06, -2.980232e-06, -5.6843413e-13, 99.99999, -99.99999, -2.3841856e-05, -5.960464e-06, 0.92996776, 1.4823167, -1.6004579)
 shape = SubResource("BoxShape3D_y5ds3")
